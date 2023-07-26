@@ -16,6 +16,16 @@ AWS Glue 4.0 containers run on Python 3.10, so you need to download and install 
 
 The spark runtime requires Java 8 to run correctly, so you can install any compatible JDK (e.g. OpenJDK, Amazon Coretto, Oracle, etc.). This guide has been tested with Amazon Coretto 8. Follow instructions [here](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-7-install.html) to install.
 
+### AWS CLI
+
+In order to connect to AWS, you will need to have a valid AWS configuration file setup. To do this, install the latest version of the [AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi) and then run the following command, filling in the your specific access key and secret access key. For more information about the different authentication options for AWS, see [the official guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
+
+```cmd
+aws configure
+```
+
+![image](img/255823684-4dfcab51-932e-457c-877a-f641d0fc253b.png)
+
 ## Download and Configure Required Libraries
 
 ### First Steps
